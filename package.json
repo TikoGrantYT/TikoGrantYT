@@ -1,0 +1,16 @@
+{
+  "name": "404-example",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@sweetalert2/theme-dark": "^4.0.2",
+    "@sweetalert2/theme-wordpress-admin": "^4.0.1",
+    "express": "^4.17.1",
+    "sweetalert2": "^10.13.3"
+  },
+  "engines": {
+    "node": "8.x"
+  }
+}

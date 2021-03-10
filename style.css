@@ -1,0 +1,486 @@
+body {
+  display: none;
+  color: white;
+  /* Default CSS */
+  margin: 0;
+  padding: 0;
+  bot-sizing: border-box;
+  /* Makes The Text Under The Widget Visable */
+  margin-bottom: 80px;
+  /* Font Family For Text */
+  font-family: "Langar", cursive;
+  /* Background Stuff */
+  background-image: url("https://cdn.glitch.com/7d8cd8bd-9b28-4d06-91c4-1a607d45f24c%2FFortnite.jpg?v=1614121222958");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body:after {
+  content: "This website was created by Tiko Grant! Make sure to subscribe and join my Discord!";
+}
+
+.content {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  text-align: center;
+}
+
+/* For vertical lines */
+vl {
+  border-left: 6px solid cyan;
+  height: 25px;
+}
+
+/* All text with the tag "<c>" */
+c {
+  /* Made the background color black */
+  background-color: black;
+  /* Made the color white to look like code */
+  color: white;
+  /* Made the background round */
+  border-radius: 5px;
+}
+
+/* All text with the tag "<c>" that is selected */
+c::selection {
+  /* Change the background color to white */
+  background-color: white;
+  /* Change the color to black */
+  color: black;
+}
+
+/* Any text that is selected */
+::selection {
+  /* Make the background color blue */
+  background: blue;
+  /* Make the color purple */
+  color: purple;
+}
+
+/* Any links */
+a {
+  /* Change the color to orange */
+  color: orange;
+  /* Make there be no underline */
+  text-decoration: none;
+  /* Make your cursor be pointer */
+  cursor: pointer;
+  font-family: "Langar", cursive;
+}
+
+/* All the button, textarea, input and dropdown styles */
+button {
+  transition: 1s;
+  border: 0;
+  background: none;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  cursor: pointer;
+  font-family: "Langar", cursive;
+}
+
+button:hover {
+  transition: 1s;
+  border-color: #2ecc71;
+}
+
+input {
+  transition: 0.25s;
+  border: 0;
+  background: none;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  font-family: "Langar", cursive;
+}
+
+input:focus {
+  transition: 0.25s;
+  width: 240px;
+  border-color: #2ecc71;
+}
+
+::placeholder {
+  opacity: 50%;
+  color: black;
+  font-family: "Langar", cursive;
+}
+
+textarea {
+  transition: 0.25s;
+  border: 0;
+  background: none;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  resize: vertical;
+  font-family: "Langar", cursive;
+}
+
+textarea:focus {
+  transition: 0.25s;
+  width: 240px;
+  border-color: #2ecc71;
+  font-family: "Langar", cursive;
+}
+
+#welcomeContent {
+  top: 0;
+  left: 50%;
+  color: #EEBA38;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* Share inout for people to copy */
+#ShareCopyInput {
+  /* Change the cursor to not allowed */
+  cursor: not-allowed;
+}
+
+/* Subscriber form on the home page */
+#SubscriberForm {
+  /*  Change the background color to lightgreen */
+  background-color: lightgreen;
+  /* Make the div round */
+  border-radius: 15px;
+}
+
+/*  Fade in animation */
+@keyframes fadeIn {
+  from {
+    /*  Make it hidden */
+    opacity: 0%;
+  }
+  to {
+    /* Make it show/fade in */
+    opacity: 100%;
+  }
+}
+
+/* Yellow warning that shows the first time you visit the website */
+#CookieAlert {
+  /* Make the background gold/yellow */
+  background-color: gold;
+  /* Make the color black because by default it is white and it is hard to see with the gold background */
+  color: black;
+  /* Make it so it is always on the users screen */
+  position: fixed;
+  /* Move the alert to the top left */
+  top: 0;
+  right: 0;
+  /* Make the element round */
+  border-radius: 10px;
+  /* Make the element fill the users screen */
+  width: 100%;
+  height: 100%;
+  /* Make it so it doesn't show up until Javascript sees that there is no cookie and it will show */
+  display: none;
+  /* Make the element pop-out from the right side */
+  animation-name: cookieAlert;
+  animation-duration: 2s;
+}
+
+/* The text in the cookie alert */
+#CookieAlertText {
+  /* Make it so the text won't we smushed up against the side */
+  padding-top: 100px;
+}
+
+/* Animation for the cookie alert */
+@keyframes cookieAlert {
+  from {
+    /* Make it start far out to the right side */
+    margin-right: -500%;
+  }
+  to {
+    /* Make it move into the user's view */
+    margin-right: 0%;
+  }
+}
+
+/* The button at the bottom right corner */
+.scroll_to_top_button {
+  /* Make it always be on the user's screen */
+  position: fixed;
+  /* Make it be at the bottom right */
+  bottom: 90px;
+  right: 10px;
+  /* Change the background color to red */
+  background-color: #EB3D18;
+  /* Make it round */
+  border-radius: 50%;
+  /* Make it bigger */
+  width: 40px;
+  height: 40px;
+  /* Make the user's cursor pointer */
+  cursor: pointer;
+}
+
+/* The bottom right button when they hover over it */
+.scroll_to_top_button:hover {
+  /* Make there be a smooth transition */
+  transition: 1.5s;
+  /* Make the background color white */
+  background-color: #FFFFFF;
+}
+
+#recaptcha > div {
+  margin: 0 auto;
+  margin-bottom: 0.5em;
+}
+
+/* total width */
+body::-webkit-scrollbar {
+  background-color: #fff;
+  width: 16px;
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 4px solid #fff;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+  display: none;
+}
+
+#alarmRingingIcon {
+  color: gold;
+  animation-name: alarmRingingIcon;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes alarmRingingIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+select {
+  outline: none;
+  background-color: #1abc9c;
+  color: #fff;
+  font-size: inherit;
+  padding: 0.5em;
+  padding-right: 2.5em;
+  border: 0;
+  margin: 0;
+  border-radius: 3px;
+  text-indent: 0.01px;
+  text-overflow: "";
+  -webkit-appearance: button; /* hide default arrow in chrome OSX */
+}
+
+select[disabled] {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+select[disabled]::after {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+#websiteDisplayContent {
+  background-color: lightgray;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+#websiteDisplayBackground {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  display: none;
+}
+
+.badge {
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  background-color: gray;
+}
+
+.badge-important {
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  background-color: #20BBDA;
+}
+
+.badge-error {
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  background-color: red;
+}
+
+.badge-correct {
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  background-color: lightgreen;
+}
+
+.rememberBackground {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  display: none;
+}
+
+.rememberAlert {
+  background-color: white;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  text-align: center;
+}
+
+.rememberAlert button {
+  color: black;
+}
+
+.rememberContent {
+  color: black;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+}
+
+.fortnite {
+  background: url("https://cdn.glitch.com/7d8cd8bd-9b28-4d06-91c4-1a607d45f24c%2FFortnitec2s5.jpg?v=1614121876974");
+  border-radius: 5px;
+}
+
+.fortnitec2s6Trailer {
+  border-radius: 10px;
+  width: 500px;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.marsLanding {
+  background-color: #005a8d;
+  border-radius: 10px;
+}
+
+.welcomeBackground {
+  background-image: url("https://cdn.glitch.com/7d8cd8bd-9b28-4d06-91c4-1a607d45f24c%2FRocketLeagueBackground.jpg?v=1614199345884");
+  width: 100%;
+  position: absolute;
+  z-index: -5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+details {
+  background-color: cyan;
+  margin: 10px;
+  outline: none;
+  border-radius: 10px;
+  border: 3px solid navy;
+  cursor: default;
+}
+
+details summary {
+  cursor: pointer;
+  outline: none;
+  border: 3px solid navy;
+  border-radius: 10px;
+}
+
+.navMenu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 10000000000000;
+}
+
+#becomeOwnerButton {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: gold;
+}
+
+.homeInfo {
+  font-size: 30px;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: lightgreen;
+  border-radius: 10px;
+}
