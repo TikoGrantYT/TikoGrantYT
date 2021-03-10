@@ -1,0 +1,6 @@
+<div style="background-color: lightgreen; color: black; padding: 1%; border-radius: 10px;">
+        <p>
+          This site is protected with Google and other services, if you use our
+          website, you agree to Google's Terms of Service and Privacy Policy!
+        </p>
+      </div>

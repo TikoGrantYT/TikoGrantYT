@@ -1,0 +1,5 @@
+Animations:
+
+  animation: animation_name; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: how_long; /* don't forget to set a duration! */
+  animation-iteration-count: until_it_stops (infinite);
