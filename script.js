@@ -329,7 +329,7 @@ document.addEventListener("keydown", async function(e) {
   if (e.ctrlKey && e.which == 66) {
     Swal.close();
     var prompt = await window.prompt("Enter owner password!");
-    if (prompt === "2580") {
+    if (prompt === "****") {
       setCookie("Owner", "true", 525600);
       document.querySelector("#becomeOwnerButton").style.display = "none";
     } else if (prompt === "" || prompt === null) {
